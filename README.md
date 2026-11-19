@@ -34,8 +34,8 @@ npm run deploy
 There is no login. Anyone who knows `/admin/` can edit or delete posts once deployed.
 Protect it with Cloudflare Access (Zero Trust) on the path `/admin*` and `/api/*`, or add auth back.
 
-## Before first deploy
+## First deploy
 
-`wrangler.jsonc` has placeholder D1 ids (so it never touches the English project's database):
-create your own with `npx wrangler d1 create embedded-linux-notes-db` and paste the id, and create the R2 bucket
-`embedded-linux-notes-media`.
+`wrangler.jsonc` has no D1 `database_id`, so Wrangler creates the D1 database (`embedded-linux-notes-db`) and the
+R2 bucket (`embedded-linux-notes-media`) automatically on the first deploy. The Worker name is `embedded-linux`
+(must match the name of the Workers Builds project).
