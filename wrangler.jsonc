@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "embedded-linux-notes",
+  "main": "src/worker/index.ts",
+  // Builds the admin editor into ./dist before every deploy, so no separate "Build command" is needed.
+  "build": { "command": "npm run build:admin" },
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "embedded-linux-notes-db",
+      "database_id": "REPLACE_WITH_YOUR_D1_ID",
+      // Keeps the local dev database (npm run dev) separate from the production one.
+      "preview_database_id": "REPLACE_WITH_YOUR_D1_ID"
+    }
+  ],
+  // Create this bucket once in the dashboard (R2 -> Create bucket) with exactly this name.
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "embedded-linux-notes-media" }]
+}
