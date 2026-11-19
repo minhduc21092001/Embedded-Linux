@@ -45,7 +45,7 @@ textarea { resize: vertical; min-height: 60px; }
 .toolbar select { padding: 5px 6px; font-size: .85rem; max-width: 130px; }
 .tb { font: inherit; font-size: .9rem; min-width: 32px; height: 32px; padding: 0 8px; border: 1px solid transparent; background: transparent; border-radius: 6px; cursor: pointer; color: var(--ink); }
 .tb:hover { background: #eee9e0; }
-.tb.on { background: var(--accent-soft); color: var(--accent); border-color: #a9dcd6; }
+.tb.on { background: var(--accent-soft); color: var(--accent); border-color: #ecc9bf; }
 .tb:disabled { opacity: .4; cursor: default; }
 .color-tb { position: relative; display: inline-flex; align-items: center; height: 32px; padding: 0 6px; border-radius: 6px; cursor: pointer; gap: 5px; font-size: .9rem; }
 .color-tb:hover { background: #eee9e0; }

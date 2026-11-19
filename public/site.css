@@ -21,8 +21,8 @@
   --ink: #1f2430;
   --muted: #6b7280;
   --line: #e6e1d9;
-  --accent: #0f766e;
-  --accent-soft: #dcf1ee;
+  --accent: #b4442b;
+  --accent-soft: #f6e4de;
   --radius: 10px;
 }
 
@@ -45,7 +45,7 @@ body.site main.wrap { flex: 1; width: 100%; }
 .site-header { position: sticky; top: 0; z-index: 30; background: rgba(255, 255, 255, .86); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; align-items: center; gap: 16px; height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; font-weight: 700; color: var(--ink); text-decoration: none; }
-.logo { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff; font-family: Consolas, "Courier New", monospace; font-weight: 700; font-size: .95rem; box-shadow: 0 3px 8px rgba(15, 118, 110, .35); }
+.logo { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff; font-family: Consolas, "Courier New", monospace; font-weight: 700; font-size: .95rem; box-shadow: 0 3px 8px rgba(180, 68, 43, .35); }
 
 main.wrap { padding-top: 26px; padding-bottom: 72px; min-height: 62vh; }
 .site-footer { border-top: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: .9rem; padding: 26px 0; }
@@ -133,7 +133,7 @@ a.chip:hover { background: color-mix(in srgb, var(--c) 22%, #fff); }
 .prose li > p { margin: 0; }
 .prose li::marker { color: var(--marker, currentcolor); }
 .prose blockquote { margin: 1.2em 0; padding: .2em 1.1em; border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 0 var(--radius) var(--radius) 0; }
-.prose code { font-family: Consolas, "Cascadia Mono", "Courier New", monospace; font-size: .85em; background: #eef1f4; color: #0b4f4a; padding: .1em .4em; border-radius: 4px; }
+.prose code { font-family: Consolas, "Cascadia Mono", "Courier New", monospace; font-size: .85em; background: #eef1f4; color: #8a3420; padding: .1em .4em; border-radius: 4px; }
 .prose pre { margin: 1.2em 0; padding: 14px 18px; background: #14181f; color: #d7dde6; border-radius: 10px; overflow-x: auto; line-height: 1.5; font-size: 16px; tab-size: 4; }
 .prose pre code { background: none; color: inherit; padding: 0; font-size: inherit; white-space: pre; }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
